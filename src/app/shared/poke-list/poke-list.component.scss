@@ -3,6 +3,9 @@
 :host{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+
+    padding: rem-calc(20);
 
     .pokemon{
         position: relative;
@@ -13,12 +16,14 @@
         height: rem-calc(157 - 40);
         padding: rem-calc(20);
         border-radius: rem-calc(10);
+        margin-bottom: rem-calc(10);
          
         &__status{
             h2{
                 font-size: rem-calc(22);
                 font-style: italic;
                 font-weight: 700;
+                text-transform: capitalize;
             }
             ul{
                 display: flex;
@@ -50,10 +55,12 @@
             right: rem-calc(20);
             bottom: rem-calc(20);
 
+            background: url('../../../assets/bg/Bolinhas.png');
+
             
         }
         img{
-            width: rem-calc(80);
+            width: rem-calc(60);
         }
 
     }
